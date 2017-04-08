@@ -1,15 +1,25 @@
-<div class="artistsearch">
-  <div class="card search">
-    <h1>Artist Directory</h1>
-    <label>search <span *ngIf="query"> for: {{query}}</span></label>
-    <input [(ngModel)]="query" placeholder="type in search term">
-  </div>
+
+
+
+<div id="header">
+  <a href="/" id="logo">Easy File Share</a>
 </div>
+<input placeholder="Enter ANY File" class="searchInput"/>
+<div>
+  <ul id="menu">
+    <li><a href="/"><span>Home</span></a></li>
+    <li><a href="/"><span>Server</span></a></li>
+    <li><a href="/"><span>Files</span></a></li>
+    <li><a href="/"><span>About us</span></a></li>
+    <li><a href="/"><span>Contact</span></a></li>
 
-<ul *ngIf="query" class="artistlist cf">
-  <li (click)="showArtist(item); query='';" class="artist cf" *ngFor="#item of (artists) | find:query">
-    <artist-item class="content" [artist]=item></artist-item>
-  </li>
-</ul>
+  </ul>
 
-<artist-details *ngIf="currentArtist" [artist]="currentArtist"></artist-details>
+<form action="upload.php" method="POST">
+
+  <input type="file" multiple>
+  <p>Drag your files here or click in this area.</p>
+  <button type="submit">Upload</button>
+</form>
+
+</div>
