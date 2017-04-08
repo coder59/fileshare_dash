@@ -2,10 +2,10 @@
   "name": "AngularJS2",
   "version": "1.0.0",
   "author": "Ray Villalobos",
-  "description": "This project is the repository for my course Up and Running with AngularJS2 course on Lynda.com",
+  "description": "This project is the repository for file sharing mechanism",
   "repository": {
     "type": "git",
-    "url": "https://github.com/planetoftheweb/angular2.git"
+    "url": "https://github.com/coder59/fileshare_dash.git"
   },
   "devDependencies": {
     "angular2": "2.0.0-beta.2",
@@ -19,5 +19,8 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-typescript": "^2.10.0",
     "gulp-webserver": "^0.9.1"
+  },
+  "dependencies": {
+    "ng2-dnd": "^4.0.2"
   }
 }
